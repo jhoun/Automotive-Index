@@ -16,8 +16,13 @@ SELECT COUNT(*)
   FROM car_models
   WHERE make_code = 'LAM';
 
--- grabs
+-- grabs all fields by years in between 2010 and 2015
 SELECT COUNT(*)
   FROM car_models
   WHERE year >= 2010
   AND year <= 2015;
+
+-- grabs all fields by year 2010
+SELECT COUNT(*)
+  FROM car_models
+  WHERE year = 2010;
